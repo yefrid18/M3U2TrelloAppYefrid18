@@ -16,7 +16,19 @@
           <button class="btn close-modal">&times;</button>
         </div>
         <div class="body">
-          <input type="text" id="todo_input" />
+          <input type="text" id="todo_input" placeholder="Titulo Tarea"/>
+          <input type="text" id="todo_input2" placeholder="Descripción"/>
+          <label for="options1">Responsable</label>
+          <select name="Responsable" id="options1">
+            <option value="AuronPlay">AuronPlay</option>
+            <option value="Ibai_Llanos">Ibai_Llanos</option>            
+          </select>      
+          <label for="options2">Fecha_Entrega</label>
+          <select name="Fecha_Entrega" id="options2">
+            <option value="1 Dia">1 Dia</option>
+            <option value="1 Semana">1 Semana</option>
+            <option value="1 Mes">1 Mes</option>   
+          </select>        
           <input type="submit" value="Agregar" id="todo_submit" />
         </div>
       </div>

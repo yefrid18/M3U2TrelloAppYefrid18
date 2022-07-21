@@ -3,7 +3,6 @@ const all_status = document.querySelectorAll(".status")
 let draggableTodo = null
 
 
-
 todos.forEach(todo =>{
     todo.addEventListener("dragstart",dragStart)
     todo.addEventListener("dragend",dragEnd)
@@ -92,9 +91,11 @@ todo_submit.addEventListener("click", createTodo)
 function createTodo() {
   const todo_div = document.createElement("div")
   const input_val = document.getElementById("todo_input").value
+  + "- " + document.getElementById("todo_input2").value
+  + "- " + document.getElementById("options1").value
+  + "- Entrega en " + document.getElementById("options2").value
   const txt = document.createTextNode(input_val)
-
-  todo_div.appendChild(txt);
+  todo_div.appendChild(txt);  
   todo_div.classList.add("todo")
   todo_div.setAttribute("draggable", "true")
 
@@ -117,6 +118,9 @@ function createTodo() {
   todo_div.addEventListener("dragend", dragEnd)
 
   document.getElementById("todo_input").value = ""
+  document.getElementById("todo_input2").value = ""
+  document.getElementById("options1").value = "AuronPlay"
+  document.getElementById("options2").value = "1 Dia"
   todo_form.classList.remove("active")
   overlay.classList.remove("active")
 }

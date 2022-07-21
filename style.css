@@ -134,7 +134,7 @@ body{
     display: block;
   }
 
-  #todo_input,
+  #todo_input,#todo_input2,#options1,#options2,
   #todo_submit{
     padding: 0.5rem 1rem;
     width: 100%;
@@ -142,8 +142,13 @@ body{
   }
 
   #todo_submit{
+    padding: 0.15rem 0.15rem;
+    width: 100%;
+    margin: 0.05rem;   
     background-color: #0a0a0a;
     color: #f3f3f3;
     font-size: 1.25rem;
     border: none;
   }
+
+
