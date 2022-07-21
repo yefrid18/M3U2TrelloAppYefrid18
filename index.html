@@ -9,27 +9,40 @@
     <title>Clone_Trello</title>
 </head>
 <body>
+    <!-- modal -->
+    <div class="modal" id="todo_form">
+        <div class="header">
+          <div class="title">Agregar Tarea</div>
+          <button class="btn close-modal">&times;</button>
+        </div>
+        <div class="body">
+          <input type="text" id="todo_input" />
+          <input type="submit" value="Agregar" id="todo_submit" />
+        </div>
+      </div>
+    <!-- todo -->  
     <div class="todo-container">
-        <div class="status">
+        <div class="status" id="no_status">
             <h1>Nueva Tarea</h1>
-            <button id="add_btn"> +Add Tarea</button>
+            <button id="add_btn" data-target-modal="#todo_form"> +Agregar Tarea</button>
             <div class="todo" draggable="true">
                 Maquetar en HTML
                 <span class="close">&times;</span>
             </div>
         </div>
         <div class="status">
-            <h1>Tarea por Hacer</h1>
+            <h1>Por Hacer</h1>
         </div>
         <div class="status">
-            <h1>Tarea en Proceso</h1>
+            <h1>En Proceso</h1>
         </div>
         <div class="status">
-            <h1>Tarea Finalizada</h1>
+            <h1>Finalizada</h1>
         </div>
     </div>  
     
-    <script src="script.js"></script>
+    <div id="overlay"></div>
 
+    <script src="script.js"></script>
 </body>
 </html>
