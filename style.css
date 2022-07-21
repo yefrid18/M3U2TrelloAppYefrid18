@@ -1,0 +1,19 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-container{
+    width: 1000px;
+    height: 80vh;
+    display: flex;
+}
+
+.status{
+    width: 25%;
+    background-color: azure;
+    position: relative;
+}
